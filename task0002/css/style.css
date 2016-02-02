@@ -2,6 +2,13 @@
     max-width: 1000px;
     margin: 0 auto;    /*text-align: center;*/
 }
+.display {
+    width:300px;
+	color: #000000;
+	background-color: #CCCCCC;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
 .warn {
     display: none;
     background-color: #DEE8EF;
