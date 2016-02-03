@@ -1,13 +1,13 @@
-
+ï»¿
 $.click("button", function() {
 
    // var content = $("input").value;
     var content = $("textarea").value;
     console.log($("textarea"));
     console.log(content);
-    content = trim(content); //È¥µôÊ×Î»µÄ¿Õ¸ñ
-    var contentArr = content.split(/\n|\s+|,|£¬|;|£»|¡¢/);//ÔÊĞíÓÃ»§ÓÃ»»ĞĞ¡¢¿Õ¸ñ£¨È«½Ç/°ë½Ç£©¡¢¶ººÅ£¨È«½Ç/°ë½Ç£©¡¢¶ÙºÅ¡¢·ÖºÅÀ´×÷Îª²»Í¬°®ºÃµÄ·Ö¸ô
-    var contentArr2 = deleteBlank(uniqArray(contentArr)); // È¥ÖØ£¬È¥¿Õ°×
+    content = trim(content); //å»æ‰é¦–ä½çš„ç©ºæ ¼
+    var contentArr = content.split(/\n|\s+|,|ï¼Œ|;|ï¼›|ã€/);//å…è®¸ç”¨æˆ·ç”¨æ¢è¡Œã€ç©ºæ ¼ï¼ˆå…¨è§’/åŠè§’ï¼‰ã€é€—å·ï¼ˆå…¨è§’/åŠè§’ï¼‰ã€é¡¿å·ã€åˆ†å·æ¥ä½œä¸ºä¸åŒçˆ±å¥½çš„åˆ†éš”
+    var contentArr2 = deleteBlank(uniqArray(contentArr)); // å»é‡ï¼Œå»ç©ºç™½
 
     var displayDiv = $(".display");
    // var warnDiv = $(".warn");
