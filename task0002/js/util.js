@@ -41,25 +41,7 @@ function cloneObject(src) {
 	
 }
 
-// 测试用例：
-var srcObj = {
-    a: 1,
-    b: {
-        b1: ["hello", "hi"],
-        b2: "JavaScript"
-    }
-};
-var abObj = srcObj;
-var tarObj = cloneObject(srcObj);
 
-srcObj.a = 2;
-srcObj.b.b1[0] = "Hello";
-
-console.log(abObj.a);
-console.log(abObj.b.b1[0]);
-
-console.log(tarObj.a);      // 1
-console.log(tarObj.b.b1[0]);    // "hello"
 // 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
 function uniqArray(arr) {
     // your implement
@@ -70,6 +52,26 @@ function uniqArray(arr) {
 		newarr.push(arr[i]);
 	}
 	return newarr;
+}
+/*
+ * 除去数组中的空元素
+ */
+function deleteBlank(arr) {
+    var arr2 = [];
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].match(/\s+/) || arr[i] === "") {
+            continue;
+        } else {
+            arr2.push(arr[i]);
+        }
+    }
+    return arr2;
+}
+// 实现一个遍历数组的方法，针对数组中每一个元素执行fn函数，并将数组索引和元素作为参数传递
+function each(arr, fn) {
+    for (var i in arr) {
+        fn(arr[i], i);
+    }
 }
 // 中级班同学跳过此题
 // 实现一个简单的trim函数，用于去除一个字符串，头部和尾部的空白字符
@@ -153,6 +155,101 @@ function getPosition(element) {
 
 }
 // your implement
+// 实现一个简单的Query
+function $(selector) {
+
+    if (!selector) {
+        return null;
+    }
+
+    if (selector == document) {
+        return document;
+    }
+
+    selector = trim(selector);
+    if (selector.indexOf(" ") !== -1) { //若存在空格
+        var selectorArr = selector.split(/\s+/); //拆成数组
+
+        var rootScope = myQuery(selectorArr[0]); //第一次的查找范围
+        var i = null;
+        var j = null;
+        var result = [];
+        //循环选择器中的每一个元素
+        for (i = 1; i < selectorArr.length; i++) {
+            for (j = 0; j < rootScope.length; j++) {
+                result.push(myQuery(selectorArr[i], rootScope[j]));
+            }
+            // rootScope = result;
+            // 目前这个方法还有bug
+        }
+        return result[0][0];
+    } else { //只有一个，直接查询
+        return myQuery(selector, document)[0];
+    }
+}
+
+/**
+ * 针对一个内容查找结果 success
+ * @param  {String} selector 选择器内容
+ * @param  {Element} root    根节点元素
+ * @return {NodeList数组}    节点列表，可能是多个节点也可能是一个
+ */
+function myQuery(selector, root) {
+    var signal = selector[0]; //
+    var allChildren = null;
+    var content = selector.substr(1);
+    var currAttr = null;
+    var result = [];
+    root = root || document; //若没有给root，赋值document
+    switch (signal) {
+        case "#":
+            result.push(document.getElementById(content));
+            break;
+        case ".":
+            allChildren = root.getElementsByTagName("*");
+            // var pattern0 = new RegExp("\\b" + content + "\\b");
+            for (i = 0; i < allChildren.length; i++) {
+                currAttr = allChildren[i].getAttribute("class");
+                if (currAttr !== null) {
+                    var currAttrsArr = currAttr.split(/\s+/);
+                    // console.log(currAttr);
+                    for (j = 0; j < currAttrsArr.length; j++) {
+                        if (content === currAttrsArr[j]) {
+                            result.push(allChildren[i]);
+                            // console.log(result);
+                        }
+                    }
+                }
+            }
+            break;
+        case "[": //属性选择
+            if (content.search("=") == -1) { //只有属性，没有值
+                allChildren = root.getElementsByTagName("*");
+                for (i = 0; i < allChildren.length; i++) {
+                    if (allChildren[i].getAttribute(selector.slice(1, -1)) !== null) {
+                        result.push(allChildren[i]);
+                    }
+                }
+            } else { //既有属性，又有值
+                allChildren = root.getElementsByTagName("*");
+                var pattern = /\[(\w+)\s*\=\s*(\w+)\]/; //为了分离等号前后的内容
+                var cut = selector.match(pattern); //分离后的结果，为数组
+                var key = cut[1]; //键
+                var value = cut[2]; //值
+                for (i = 0; i < allChildren.length; i++) {
+                    if (allChildren[i].getAttribute(key) == value) {
+                        result.push(allChildren[i]);
+                    }
+                }
+            }
+            break;
+        default: //tag
+            result = root.getElementsByTagName(selector);
+            break;
+    }
+    return result;
+}
+
 // 给一个element绑定一个针对event事件的响应，响应函数为listener
 function addEvent(element, event, listener) {
     if (element.addEventListener) {
@@ -182,3 +279,27 @@ function addEnterEvent(element, listener) {
         }
     });
 }
+// 事件代理
+function delegateEvent(element,tag,eventName,listener){
+    addEvent(element, eventName, function(event){
+        var target = event.target || event.srcElement;
+        if(target.tagName.toLowerCase() == tag.toLowerCase()) {
+            listener.call(target, event);
+        }
+    });
+}
+// 估计有同学已经开始吐槽了，函数里面一堆$看着晕啊，那么接下来把我们的事件函数做如下封装改变：
+
+$.on = function(selector, event, listener) {
+    addEvent($(selector), event, listener);
+};
+$.click = function(selector, listener) {
+    addClickEvent($(selector), listener);
+};
+$.un = function(selector, event, listener) {
+    removeEvent($(selector), event, listener);
+};
+$.delegate = function(selector, tag, event, listener) {
+    delegateEvent($(selector), tag, event, listener);
+};
+
