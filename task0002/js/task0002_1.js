@@ -9,7 +9,7 @@ $.click("button", function() {
     var contentArr = content.split(/,+|，+/);//由中文或者英文逗号隔开
     var contentArr2 = deleteBlank(uniqArray(contentArr)); // 去重，去空白
 
-    var showDiv = $(".display");
+    var displayDiv = $(".display");
    // var warnDiv = $(".warn");
 
  /*   if (contentArr2.length > 10 || contentArr2.length === 0) {
