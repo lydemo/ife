@@ -48,7 +48,7 @@ function uniqArray(arr) {
 	var newarr=[];
 	for(var i=0;i<arr.length;i++)
 	{
-	 if(newarr.indexOf(arr[i])==-1;
+	 if(newarr.indexOf(arr[i])==-1)
 		newarr.push(arr[i]);
 	}
 	return newarr;
