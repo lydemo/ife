@@ -39,7 +39,7 @@ h1{
 }
 .index-content{
     max-width: 600px;
-    border-bottom: 1px dashed #aaa;
+    border-bottom: 1px  thick #aaa;
 }
 .index-content a{
     display:block;

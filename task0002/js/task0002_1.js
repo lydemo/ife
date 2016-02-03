@@ -6,7 +6,7 @@ $.click("button", function() {
     console.log($("textarea"));
     console.log(content);
     content = trim(content); //去掉首位的空格
-    var contentArr = content.split(/\n|\s+|,|，|\t|、|;|；/);//允许用户用换行、空格（全角/半角）、逗号（全角/半角）、顿号、分号来作为不同爱好的分隔
+    var contentArr = content.split(/\n|\s+|,|，|;|；|、/);//允许用户用换行、空格（全角/半角）、逗号（全角/半角）、顿号、分号来作为不同爱好的分隔
     var contentArr2 = deleteBlank(uniqArray(contentArr)); // 去重，去空白
 
     var displayDiv = $(".display");
