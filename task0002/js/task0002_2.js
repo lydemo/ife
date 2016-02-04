@@ -18,11 +18,11 @@ $.click("button",function{
             var gap = futureTime - currentTime;
             if (gap < 0) {
                 clearInterval(clock);
-                showDiv.innerHTML = "请输入未来的某一天";
+                displayDiv.innerHTML = "请输入未来的某一天";
                 return;
             } else if (gap === 0) {
                 clearInterval(clock);
-                showDiv.innerHTML = "距离" + futureTimeArr[0] + "年" + futureTimeArr[1] + "月" + futureTimeArr[2] + "日还有0天0小时0分0秒";
+                displayDiv.innerHTML = "距离" + futureTimeArr[0] + "年" + futureTimeArr[1] + "月" + futureTimeArr[2] + "日还有0天0小时0分0秒";
                 return;
             } else { //倒计时开始
                 var day = Math.floor(gap / 1000 / 3600 / 24);
@@ -31,11 +31,11 @@ $.click("button",function{
                 var second = Math.floor(gap % (1000 * 3600 * 24) % (3600 * 1000) % (60 * 1000) / 1000);
                 console.log(day + "  " + hour + "   " + minute + "   " + second);
 
-                showDiv.innerHTML = "距离" + futureTimeArr[0] + "年" + futureTimeArr[1] + "月" + futureTimeArr[2] + "日还有" + day + "天" + hour + "小时" + minute + "分" + second + "秒";
+                displayDiv.innerHTML = "距离" + futureTimeArr[0] + "年" + futureTimeArr[1] + "月" + futureTimeArr[2] + "日还有" + day + "天" + hour + "小时" + minute + "分" + second + "秒";
             }
         }
     } else {
-        showDiv.innerHTML = "请检查输入格式";
+        displayDiv.innerHTML = "请检查输入格式";
     }
    
    
