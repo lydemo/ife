@@ -130,10 +130,11 @@ function addClass(element, newClassName) {
 	 var oldClassName = element.className; //获取旧的样式类
     element.className = oldClassName === "" ? newClassName : oldClassName + " " + newClassName;
 }
-
 // 移除element中的样式oldClassName
 function removeClass(element, oldClassName) {
-    // your implement
+    var originClassName = element.className; //获取原先的样式类
+    var pattern = new RegExp("\\b" + oldClassName + "\\b"); //使用构造函数构造动态的正则表达式
+    element.className = trim(originClassName.replace(pattern, ''));
 }
 
 // 判断siblingNode和element是否为同一个父元素下的同一级的元素，返回bool值
