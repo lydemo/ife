@@ -1,5 +1,5 @@
 ﻿var clock;
-$.click("button",function{
+$.click("button",function(){
    clearInterval(clock);
    var displayDiv = $(".display");
    var inputValue = $("input").value;
