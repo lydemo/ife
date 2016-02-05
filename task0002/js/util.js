@@ -135,8 +135,7 @@ function removeClass(element, oldClassName) {
 //    var originClassName = element.className; //获取原先的样式类
 //    var pattern = new RegExp("\\b" + oldClassName + "\\b"); //使用构造函数构造动态的正则表达式
 //    element.className = trim(originClassName.replace(pattern, ''));
-      var newClassName;
-	  element.className=trim(newClassName.replace(oldClassName,''));
+	  element.className='';
 }
 
 // 判断siblingNode和element是否为同一个父元素下的同一级的元素，返回bool值
