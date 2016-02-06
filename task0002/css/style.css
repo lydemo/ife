@@ -21,7 +21,7 @@
 	background-color: #6090b6;
 }
 .navbarheader {
-    position: relative;
+    position: absolute;
 	left: 50%;
 	margin: 0 auto;
 	padding: 5px;
