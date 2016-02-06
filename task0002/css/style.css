@@ -11,6 +11,39 @@
 	border: 1px solid #000000;
 	border-radius: 5px;
 }
+.displayzone {
+    width: 100%;
+    
+    
+}
+.displaycolor1{
+    background-color: #4FC5C7;
+}
+.displaycolor2 {
+    background-color: #97EC71;
+
+}
+.displaycolor3 {
+    background-color: #DBF977;
+
+}
+.displaycolor4 {
+    background-color: #DE9DE6;
+
+}
+.displaycolor5 {
+    background-color: #FA6E86;
+
+}
+.displaycolor6 {
+    background-color: #6090b6;
+
+}
+.middle {
+    display: block;
+	verticle-align: middle;
+	width: 100%;
+}
 .navbar {
     display: block;  
     position: relative;
@@ -31,6 +64,12 @@
     font-family: Billabong;
 	color: #fff;
 	font-size: 32px;
+}
+#fullpage {
+    height: 100%;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease;
 }
 #navcircle ul {
     margin: 0;
