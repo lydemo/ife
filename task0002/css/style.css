@@ -60,7 +60,7 @@
     display: block;  
     position: relative;
     border: 1px solid transparent;
-	border-radius: 4px;
+	border-radius: 4px 4px 0px 0px;
 	background-color: #6090b6;
 }
 .navbarheader {
