@@ -26,15 +26,14 @@
 	margin-left: auto;
 	margin-right: auto;
 	width:140px;
-	padding: 10px;
-	
-	
-}
-.navbarheader span{
-    font-family: Billabong;
+	padding-left: auto;
+	padding-right: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	font-family: Billabong;
 	color: #fff;
 	font-size: 28px;
-	text-align: center;
+		
 }
 #navcircle ul {
     margin: 0;
