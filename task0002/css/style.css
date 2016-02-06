@@ -40,9 +40,22 @@
     background-color: #6090b6;
 
 }
+.displaycontent {
+    margin-left:auto;
+	margin-right:auto;
+	width: 470px;
+}
+.displaycontent span{
+    color: #fff;
+    font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+	font-size: 20px;
+
+}
 .displaytitle {
     margin-left:auto;
 	margin-right:auto;
+	margin-top: 20px;
+	margin-bottom:25px;
 	width: 140px;
 	text-align: center;
 }
