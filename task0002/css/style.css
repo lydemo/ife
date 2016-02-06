@@ -41,8 +41,8 @@
 
 }
 #navcircle ul li a span {
-    width: 14px !important;
-    height: 14px !important;
+    width: 6px !important;
+    height: 6px !important;
 	border-radius: 50%;
     position: absolute;
     z-index: 1;
