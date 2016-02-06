@@ -23,7 +23,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 140px;
-	padding: 10px 15px 10px 15px;
+	padding: 10px 15px 7px 15px;
 	text-align: center;	
 	
 }
@@ -31,7 +31,6 @@
     font-family: Billabong;
 	color: #fff;
 	font-size: 32px;
-    vertical-align: middle;
 }
 #navcircle ul {
     margin: 0;
