@@ -53,7 +53,7 @@
     background: none !important;
 
 }
-#navcircle ul li a:active span {
+#navcircle ul li .beactive span {
 background: #6090b6 !important;
 
 }
