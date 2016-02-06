@@ -12,6 +12,7 @@
 	border-radius: 5px;
 }
 .navbar {
+    display: block;  
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
@@ -22,11 +23,11 @@
 .navbarheader {
     position: relative;
 	left: 50%;
-	top: 50%;
+	margin: 0 auto;
 	padding: 5px;
 	font-family: Billabong;
 	color: #fff;
-	font-size: 24px;
+	font-size: 28px;
 	
 }
 #navcircle ul {
