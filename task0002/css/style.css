@@ -42,10 +42,12 @@
 .displaytitle {
     margin-left:auto;
 	margin-right:auto;
+	width: 140px;
+	text-align: center;
 }
 .displaytitle span {
     color: #fff;
-    font-family: "Î¢ÈíÑÅºÚ";
+    font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
 	font-weight: bold;
 	font-size: 36px;
 }
