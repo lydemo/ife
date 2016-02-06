@@ -43,6 +43,9 @@
 #navcircle ul li a span {
     width: 14px !important;
     height: 14px !important;
+	border-radius: 50%;
+    position: absolute;
+    z-index: 1;
     left: 0 !important;
     top: 0 !important;
     margin: 0 !important;
@@ -50,7 +53,7 @@
     background: none !important;
 
 }
-@media(max-width:768px){
+@media(max-width:1368px){
 .right {
     position: fixed;
     z-index: 100;
