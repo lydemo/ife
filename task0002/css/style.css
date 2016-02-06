@@ -13,7 +13,8 @@
 }
 .displayzone {
     width: 100%;
-    
+	height: 667px;
+    z-index: 0;
     
 }
 .displaycolor1{
@@ -55,6 +56,7 @@
     display: block;
 	verticle-align: middle;
 	width: 100%;
+	
 }
 .navbar {
     display: block;  
