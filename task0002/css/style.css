@@ -51,7 +51,7 @@
 	font-size: 20px;
 
 }
-.displayzone .displaytitle {
+.displaytitle {
     margin-left:auto;
 	margin-right:auto;
 	margin-top: 20px;
@@ -64,12 +64,6 @@
     font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
 	font-weight: bold;
 	font-size: 36px;
-}
-.middle {
-    display: block;
-	verticle-align: middle;
-	width: 100%;
-	
 }
 .navbar {
     display: block;  
