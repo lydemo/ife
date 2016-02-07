@@ -95,12 +95,12 @@
     transform: translate3d(0px, 0px, 0px);
     transition: all 700ms ease;
 }
-#menu ul {
+#menu {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-#menu ul li {
+#menu li {
     display: block;
     width: 14px !important;
     height: 14px !important;
@@ -108,7 +108,7 @@
     margin: 7px;
     position: relative;
 }
-#menu ul li a {
+#menu li a {
     display: block;
     position: relative;
     z-index: 1;
@@ -118,7 +118,7 @@
     text-decoration: none;
 
 }
-#menu ul li a span {
+#menu li a span {
     width: 14px !important;
     height: 14px !important;
 	border-radius: 50%;
@@ -131,10 +131,10 @@
     background: none !important;
 
 }
-#menu ul li .beactive span {
+/*#menu li .beactive span {
 background: #fff !important;
 
-}
+} */
 @media(max-width:1368px){
 .right {
     position: fixed;
