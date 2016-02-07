@@ -15,20 +15,20 @@
     width: 100%;
 	height: 667px;
     z-index: 0;}
-.display board{
+.displayboard{
     width: 470px;
 	margin-left: auto;
 	margin-right: auto;
 }   
 .displaycolor1{
-    background-color: #4FC5C7;
+    background-color: #6090b6;
 }
 .displaycolor2 {
-    background-color: #97EC71;
+    background-color: #4FC5C7;
 
 }
 .displaycolor3 {
-    background-color: #DBF977;
+    background-color: #97EC71;
 
 }
 .displaycolor4 {
@@ -39,14 +39,10 @@
     background-color: #FA6E86;
 
 }
-.displaycolor6 {
-    background-color: #6090b6;
-
-}
 .displaycontent {
     margin-left: auto;
 	margin-right: auto;
-	margin-bottom: auto;	
+	margin-bottom: 15px;	
 	width: 470px;
 }
 .displaycontent span{
@@ -54,6 +50,10 @@
     font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
 	font-size: 20px;
 
+}
+.displayimg {
+    width: 100%;
+	border-radius: 4px;
 }
 .displaytitle {
     position: relative;
