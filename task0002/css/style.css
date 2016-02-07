@@ -21,17 +21,14 @@
 	margin-right: auto;
 	text-align: center;
 }
-.displayboard span{
+.displayboard a{
     color: #fff;
     font-family: Billabong; 
 	font-size: 36px;
-
-}
-.displayboard span a{
     text-decoration: none;
-} 
+}
 .displayboard span a:hover{
-    color: #00abd8;
+    color: #9FE0F6;
 }  
 .displaycolor1{
     background-color: #6090b6;
