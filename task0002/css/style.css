@@ -31,7 +31,7 @@
 	-moz-transition:0.4s ease;
 	-o-transition:0.4s ease;
 }
-.displayboard:hover a{
+.displayboard a:hover{
     -webkit-transform:rotate(360deg) scale(1.5);
 	-moz-transform:rotate(360deg) scale(1.5);
 	-o-transform:rotate(360deg) scale(1.5);
