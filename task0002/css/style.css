@@ -70,26 +70,7 @@
 	font-weight: bold;
 	font-size: 36px;
 }
-.navbar {
-    display: block;  
-    position: relative;
-    border: 1px solid transparent;
-	border-radius: 4px 4px 0px 0px;
-	background-color: #6090b6;
-}
-.navbarheader {
-	margin-left: auto;
-	margin-right: auto;
-	width: 140px;
-	padding: 10px 15px 7px 15px;
-	text-align: center;	
-	
-}
-.navbarheader span{
-    font-family: Billabong;
-	color: #fff;
-	font-size: 32px;
-}
+
 #fullpage {
     height: 100%;
     position: relative;
@@ -128,12 +109,12 @@
     left: 0 !important;
     top: 0 !important;
     margin: 0 !important;
-    border: 1px solid #6090b6 !important;
+    border: 1px solid #fff !important;
     background: none !important;
 
 }
 #navcircle ul li .beactive span {
-background: #6090b6 !important;
+background: #fff !important;
 
 }
 @media(max-width:1368px){
