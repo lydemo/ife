@@ -31,12 +31,12 @@
 	-moz-transition:0.4s ease;
 	-o-transition:0.4s ease;
 }
-.displayboard a:hover{
-    -webkit-transform:rotate(360deg) scale(2);
-	-moz-transform:rotate(360deg) scale(2);
-	-o-transform:rotate(360deg) scale(2);
-	-ms-transform:rotate(360deg) scale(2);
-	transform:rotate(360deg) scale(2);
+.displayboard:hover a{
+    -webkit-transform:rotate(360deg) scale(1.5);
+	-moz-transform:rotate(360deg) scale(1.5);
+	-o-transform:rotate(360deg) scale(1.5);
+	-ms-transform:rotate(360deg) scale(1.5);
+	transform:rotate(360deg) scale(1.5);
 }  
 .displaycolor1{
     background-color: #6090b6;
