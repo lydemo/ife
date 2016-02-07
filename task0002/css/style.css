@@ -38,7 +38,7 @@
 	-ms-transform:rotate(360deg) scale(1.5);
 	transform:rotate(360deg) scale(1.5);
 }  
-.displaycolor1{
+/*.displaycolor1{
     background-color: #6090b6;
 }
 .displaycolor2 {
@@ -56,7 +56,7 @@
 .displaycolor5 {
     background-color: #FA6E86;
 
-}
+} */
 .displaycontent {
     margin-left: auto;
 	margin-right: auto;
@@ -95,12 +95,12 @@
     transform: translate3d(0px, 0px, 0px);
     transition: all 700ms ease;
 }
-#navcircle ul {
+#menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-#navcircle ul li {
+#menu ul li {
     display: block;
     width: 14px !important;
     height: 14px !important;
@@ -108,7 +108,7 @@
     margin: 7px;
     position: relative;
 }
-#navcircle ul li a {
+#menu ul li a {
     display: block;
     position: relative;
     z-index: 1;
@@ -118,7 +118,7 @@
     text-decoration: none;
 
 }
-#navcircle ul li a span {
+#menu ul li a span {
     width: 14px !important;
     height: 14px !important;
 	border-radius: 50%;
@@ -131,7 +131,7 @@
     background: none !important;
 
 }
-#navcircle ul li .beactive span {
+#menu ul li .beactive span {
 background: #fff !important;
 
 }

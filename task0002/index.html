@@ -4,10 +4,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <title>Demo Board</title>
         <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.css">
+		<script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.js"></script>
+		<script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/vendors/jquery.easings.min.js"></script>
+		<script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/vendors/jquery.slimscroll.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#6090b6', '#4FC5C7', '#97EC71', '#DE9DE6', '#FA6E86'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
     </head>
     <body>
 	  <div class="" id="fullpage">
-	    <div class="displayzone displaycolor1">
+	    <div class="section displayzone displaycolor1">
 		  
 		    <div class="displaytitle">
 			  <span>任务一</span>
@@ -19,7 +33,7 @@
 			<a href="/ife/task0002/task0002_1.html">Demo</a>
 			</div>
 		</div>
-		<div class="displayzone displaycolor2">
+		<div class="section displayzone displaycolor2">
 		  
 		    <div class="displaytitle">
 			  <span>任务二</span>
@@ -41,7 +55,7 @@
 			<a href="/ife/task0002/task0002_2.html">Demo</a>
 			</div>
 		</div>
-		<div class="displayzone displaycolor3">
+		<div class="section displayzone displaycolor3">
 		  
 		    <div class="displaytitle">
 			  <span>任务三</span>
@@ -61,7 +75,7 @@
 			<a href="/ife/task0002/task0002_3.html">Demo</a>
 			</div>
 		</div>
-		<div class="displayzone displaycolor4">
+		<div class="section displayzone displaycolor4">
 		  
 		    <div class="displaytitle">
 			  <span>任务四</span>
@@ -80,7 +94,7 @@
 			<a href="#">Demo</a>
 			</div>
 		</div>
-		<div class="displayzone displaycolor5">
+		<div class="section displayzone displaycolor5">
 		  
 		    <div class="displaytitle">
 			  <span>任务五</span>
@@ -105,13 +119,13 @@
 		</div>
 		
 	  </div>
-	  <div class="right" id="navcircle">
+	  <div class="right" id="menu">
 	    <ul>
-		  <li><a href="#" class="beactive"><span></span></a></li>
-		  <li><a href="#"><span></span></a></li>
-		  <li><a href="#"><span></span></a></li>
-		  <li><a href="#"><span></span></a></li>
-		  <li><a href="#"><span></span></a></li>		  
+		  <li data-menuanchor="firstPage"><a href="#firstPage" class="beactive"><span></span></a></li>
+		  <li data-menuanchor="secondPage"><a href="#secondPage"><span></span></a></li>
+		  <li data-menuanchor="3rdPage"><a href="#3rdPage"><span></span></a></li>
+		  <li data-menuanchor="4thpage"><a href="#4thpage"><span></span></a></li>
+		  <li data-menuanchor="lastPage"><a href="#lastPage"><span></span></a></li>		  
 		</ul> 
 	  </div>  
     </body>
