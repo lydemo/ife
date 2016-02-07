@@ -131,10 +131,10 @@
     background: none !important;
 
 }
-/*#menu li .beactive span {
+#menu li .active span {
 background: #fff !important;
 
-} */
+}
 @media(max-width:1368px){
 .right {
     position: fixed;
