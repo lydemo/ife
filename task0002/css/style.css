@@ -131,7 +131,7 @@
     background: none !important;
 
 }
-.active span {
+#menu .active span {
 background: #fff !important;
 
 }
@@ -224,10 +224,10 @@ h1{
     border-radius: 10px;
     border: 1px solid #fff;
 }
-.beactive {
+/*.active {
     background-color: #fff;
     cursor: default;
-}
+}*/
 
 /* ÊäÈë¿òÌáÊ¾ */
 .input-hint input {
