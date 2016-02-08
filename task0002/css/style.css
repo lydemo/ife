@@ -3,6 +3,7 @@
     max-width: 1000px;
     margin: 0 auto;    /*text-align: center;*/
 	background-color: #4FC5C7;
+	overflow: hidden;
 }
 .contenttitle {
     width:50px;
