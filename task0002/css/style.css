@@ -131,7 +131,7 @@
     background: none !important;
 
 }
-#menu li .active span {
+.active span {
 background: #fff !important;
 
 }
@@ -224,7 +224,7 @@ h1{
     border-radius: 10px;
     border: 1px solid #fff;
 }
-.active {
+.beactive {
     background-color: #fff;
     cursor: default;
 }
