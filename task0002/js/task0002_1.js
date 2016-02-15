@@ -9,7 +9,7 @@ $.click("button", function() {
     var contentArr = content.split(/\n|\s+|,|，|;|；|、/);//允许用户用换行、空格（全角/半角）、逗号（全角/半角）、顿号、分号来作为不同爱好的分隔
     var contentArr2 = deleteBlank(uniqArray(contentArr)); // 去重，去空白
 
-    var displayDiv = $(".display");
+    var displayDiv = $(".hobby");
    // var warnDiv = $(".warn");
 
  /*   if (contentArr2.length > 10 || contentArr2.length === 0) {
