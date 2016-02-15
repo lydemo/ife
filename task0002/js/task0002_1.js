@@ -18,7 +18,7 @@ $.click("button", function() {
         displayDiv.style.display = "none";
    } else {
         
-      // var checkboxStr = "";
+       var checkboxStr = "";
         for (var i = 0; i < contentArr2.length; i++) {
            //  contentArr2[i] = 0;
             checkboxStr += '<br><input type="checkbox"><label>' + contentArr2[i] + '</label>';
