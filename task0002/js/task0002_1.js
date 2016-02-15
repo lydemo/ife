@@ -10,14 +10,14 @@ $.click("button", function() {
     var contentArr2 = deleteBlank(uniqArray(contentArr)); 
 
     var displayDiv = $(".hobby");
-    var warnDiv = $(".warn");
+   
 
    if (contentArr2.length > 10 || contentArr2.length === 0) {
-        warnDiv.style.display = "block"; */
+        
 		if(contentArr2.length===0)
         displayDiv.style.display = "none";
    } else {
-        warnDiv.style.display = "none"; */
+        
        var checkboxStr = "";
         for (var i = 0; i < contentArr2.length; i++) {
              contentArr2[i] = 0;
