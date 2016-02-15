@@ -22,7 +22,7 @@ $.click("button", function() {
         for (var i = 0; i < contentArr2.length; i++) {
              contentArr2[i] = 0;
             checkboxStr += '<br><input type="checkbox"><label>' + contentArr2[i] + '</label>';
-        }  */
+        }  
         console.log(checkboxStr.substr(4));
         displayDiv.innerHTML =contentArr2 ;
         displayDiv.style.display = "block";
