@@ -29,7 +29,7 @@ $.click("button", function() {
     }
 
     console.log(contentArr2);
-  //  $(".show").innerHTML = contentArr2;
+    $(".hobby").innerHTML = contentArr2;
 
 
 
